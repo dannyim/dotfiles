@@ -1,0 +1,10 @@
+# Ignore everything
+*
+
+# Include Brewfile
+!Brewfile
+
+# Include relevant dotfiles
+!/.bash_profile
+!/.gitignore
+!/.vimrc
