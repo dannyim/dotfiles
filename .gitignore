@@ -1,10 +1,14 @@
 # Ignore everything
 *
 
+# whitelist directories
+!*/
+
 # Include Brewfile
 !Brewfile
 
-# Include relevant dotfiles
+# Include relevant files
 !/.bash_profile
 !/.gitignore
 !/.vimrc
+!/.config/karabiner/assets/complex_modifications/*.json
