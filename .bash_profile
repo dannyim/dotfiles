@@ -26,3 +26,10 @@ if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -
 export PATH=$PATH:~/.local/bin
 export PATH="/usr/local/opt/libpq/bin:$PATH"
 if [ -e /Users/anymind/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/anymind/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+
+# For compilers to find zlib you may need to set:
+export LDFLAGS="${LDFLAGS} -L/usr/local/opt/zlib/lib"
+export CPPFLAGS="${CPPFLAGS} -I/usr/local/opt/zlib/include"
+
+# For pkg-config to find zlib you may need to set:
+export PKG_CONFIG_PATH="${PKG_CONFIG_PATH} /usr/local/opt/zlib/lib/pkgconfig"
